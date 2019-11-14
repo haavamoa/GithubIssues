@@ -122,6 +122,7 @@ $tf/
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
+*.DotSettings
 
 # JustCode is a .NET coding add-in
 .JustCode
@@ -338,4 +339,5 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
-src/Retrospective.Service.Tests/Services/SlackServiceTests.cs
+# Mac generated
+.DS_Store
