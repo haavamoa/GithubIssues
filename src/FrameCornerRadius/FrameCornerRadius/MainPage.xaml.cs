@@ -16,6 +16,7 @@ namespace FrameCornerRadius
     {
         private double m_frameCornerRadius;
         private double m_frameHeightRequest;
+        private double m_frameWidthRequest;
 
         public MainPage()
         {
@@ -44,5 +45,15 @@ namespace FrameCornerRadius
 
         public ICommand NavigateToWorkAroundCommand { get; } =
             new Command(() => Application.Current.MainPage.Navigation.PushAsync(new WorkAroundPage()));
+
+        public double FrameWidthRequest
+        {
+            get => m_frameWidthRequest;
+            set
+            {
+                m_frameWidthRequest = value; 
+                OnPropertyChanged();
+            }
+        }
     }
 }

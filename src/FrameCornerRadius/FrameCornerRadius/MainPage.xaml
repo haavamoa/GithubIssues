@@ -7,7 +7,8 @@
              x:Class="FrameCornerRadius.MainPage"
              x:Name="codeBehind">
 
-    <Grid BindingContext="{Binding Source={x:Reference codeBehind}}">
+    <WebView Source="http://www.africau.edu/images/default/sample.pdf" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    <!--<Grid BindingContext="{Binding Source={x:Reference codeBehind}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
@@ -18,7 +19,7 @@
                Padding="2.5"
                BackgroundColor="Black"
                HeightRequest="{Binding FrameHeightRequest}"
-               WidthRequest="{Binding FrameHeightRequest}"
+               WidthRequest="{Binding FrameWidthRequest}"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                BorderColor="White">
@@ -31,10 +32,11 @@
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
             <Label Grid.Column="0"
                    Grid.Row="0"
-                   Text="HeightRequest / WidthRequest : "
+                   Text="HeightRequest : "
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Entry Grid.Column="1"
@@ -46,11 +48,23 @@
                    WidthRequest="70" />
             <Label Grid.Column="0"
                    Grid.Row="1"
-                   Text="CornerRadius : "
+                   Text="WidthRequest : "
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
             <Entry Grid.Column="1"
                    Grid.Row="1"
+                   Keyboard="Numeric"
+                   Text="{Binding FrameWidthRequest}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="70" />
+            <Label Grid.Column="0"
+                   Grid.Row="2"
+                   Text="CornerRadius : "
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Entry Grid.Column="1"
+                   Grid.Row="2"
                    Keyboard="Numeric"
                    Text="{Binding FrameCornerRadius}"
                    VerticalOptions="CenterAndExpand"
@@ -58,6 +72,6 @@
                    WidthRequest="70" />
         </Grid>
         <Button Grid.Row="2" Text="WorkAround" Command="{Binding Source={x:Reference codeBehind}, Path=NavigateToWorkAroundCommand}"/>
-    </Grid>
+    </Grid>-->
 
 </ContentPage>

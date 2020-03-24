@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameCornerRadius.Android",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameCornerRadius.iOS", "FrameCornerRadius\FrameCornerRadius.iOS\FrameCornerRadius.iOS.csproj", "{002FDD23-F615-43DC-B67F-6D7224E9249E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameCornerRadius", "FrameCornerRadius\FrameCornerRadius\FrameCornerRadius.csproj", "{16F0CE0E-F7A2-4856-A6A1-AC22F492C42D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameCornerRadius", "FrameCornerRadius\FrameCornerRadius\FrameCornerRadius.csproj", "{16F0CE0E-F7A2-4856-A6A1-AC22F492C42D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
