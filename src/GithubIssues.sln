@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameCornerRadius.iOS", "Fr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameCornerRadius", "FrameCornerRadius\FrameCornerRadius\FrameCornerRadius.csproj", "{16F0CE0E-F7A2-4856-A6A1-AC22F492C42D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RefreshViewSharedBindingContext", "RefreshViewSharedBindingContext", "{74FC649B-9D37-4312-A045-67B9769C7ECB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
