@@ -35,6 +35,13 @@ namespace CarouselViewObservableCollection
             {
                 Items.Remove(Items.Last());
                 ((Command)RemoveLastCommand).ChangeCanExecute();
+
+                // Workaround
+                //if(!(Items.Any()))
+                //{
+                //    Items = new ObservableCollection<string>();
+                //}
+
             }, () => Items.Any());
         }
 
